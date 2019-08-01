@@ -193,15 +193,15 @@ describe "NYC Pigeon Organizer" do
         before(:all) do
           @luca = @result["Luca"]
         end
-        it "knows Alex is white and brown" do
+        it "knows Luca is white and brown" do
           expect(@luca[:color].length).to eq(1)
           expect(@luca[:color]).to include("brown")
         end
-        it "knows Alex is male" do
+        it "knows Luca is male" do
           expect(@luca[:gender].length).to eq(1)
           expect(@luca[:gender]).to include("male")
         end
-        it "knows Alex lives in central park" do
+        it "knows Luca lives in central park" do
           expect(@luca[:lives].length).to eq(1)
           expect(@luca[:lives]).to include("Library")
         end
@@ -211,15 +211,15 @@ describe "NYC Pigeon Organizer" do
         before(:all) do
           @lola = @result["Lola"]
         end
-        it "knows Alex is white and brown" do
+        it "knows Lola is white and brown" do
           expect(@lola[:color].length).to eq(1)
           expect(@lola[:color]).to include("black")
         end
-        it "knows Alex is male" do
+        it "knows Lola is male" do
           expect(@lola[:gender].length).to eq(1)
           expect(@lola[:gender]).to include("female")
         end
-        it "knows Alex lives in central park" do
+        it "knows Lola lives in central park" do
           expect(@lola[:lives].length).to eq(1)
           expect(@lola[:lives]).to include("Central Park")
         end
